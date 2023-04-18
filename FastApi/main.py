@@ -4,7 +4,7 @@ from typing import Optional
 from typing import List, Tuple
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-app = FastAPI(title='API FILMS',description='Here, we WILL recomend you good movies', version='0.1')
+app = FastAPI(title='API FILMS',description='Here, I´ll recomend you good movies', version='0.1')
 
 #http://127.0.0.1:8000
 '''''
@@ -19,8 +19,8 @@ async def index():
     return "Function for searching: 1. get_max_duration, 2. get_score_count, 3. get_count_platform, 4. get_actor, 5.prod_per_county  y 6.get_contents(rating)"
 
 #loading Data
-path = 'C:/Users/Hp/Documents/henry course/MLOpsReviews/datasets/totalPlatforms.csv'
-platforms_df = pd.read_csv(path, parse_dates=['date_added'])
+path = 'datasets/total_Platforms.parquet'
+platforms_df = pd.read_parquet(path)
 
 
 '''''
