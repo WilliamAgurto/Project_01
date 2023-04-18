@@ -4,7 +4,7 @@
 
 </div>
 <center><h1><b> 
-	PROYECTO INDIVIDUAL Nº1 <br>
+	 INDIVIDUAL PROJECT Nº1 <br>
 <h1>Machine Learning Operations (MLOps)</h1> </b></h1></center><br>
 	
 
